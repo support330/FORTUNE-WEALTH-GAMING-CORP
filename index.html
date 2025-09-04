@@ -12,9 +12,6 @@
   <link href="./SRC/CSS/output.css" rel="stylesheet">
   <link href="./SRC/CSS/custom.css" rel="stylesheet">
   <script src="SRC/JS/script.js"></script>
-  <!-- JS for Hamburger -->
-<script src="./SRC/JS/menu.js" defer></script>
-
 
   <!--  Favicon -->
   <link rel="icon" type="image/png" sizes="16x16" href="./SRC/images/FWlogo.png">
@@ -360,7 +357,7 @@
         </footer>
 
   </div>
-  <!-- JS for Hamburger -->
+<!-- JS for Hamburger -->
 <script>
   const menuBtn = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
@@ -400,6 +397,38 @@
     bars[1].classList.toggle("opacity-0", isOpen);
     bars[2].classList.toggle("-rotate-45", isOpen);
     bars[2].classList.toggle("-translate-y-2", isOpen);
+  });
+
+  // Auto close menu when resizing to desktop
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768 && isOpen) {
+      isOpen = false;
+      mobileMenu.classList.remove("opacity-100", "visible", "scale-100");
+      mobileMenu.classList.add("opacity-0", "invisible", "scale-95");
+
+      // reset hamburger
+      const bars = menuBtn.querySelectorAll(".bar");
+      bars[0].classList.remove("rotate-45", "translate-y-2");
+      bars[1].classList.remove("opacity-0");
+      bars[2].classList.remove("-rotate-45", "-translate-y-2");
+
+      // reset links
+      mobileLinks.forEach(link => {
+        link.classList.add("opacity-0", "translate-y-4");
+        link.classList.remove("opacity-100", "translate-y-0");
+      });
+    }
+  });
+   // Click outside to close
+  document.addEventListener("click", (e) => {
+    if (isOpen && !mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  // Close menu when clicking a link
+  mobileLinks.forEach(link => {
+    link.addEventListener("click", () => closeMenu());
   });
 </script>
 <style>
