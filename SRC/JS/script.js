@@ -1,6 +1,5 @@
 
-<!-- JS for Hamburger -->
-<script>
+ // for Hamburger
   const menuBtn = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
   const mobileLinks = document.querySelectorAll(".mobile-link");
