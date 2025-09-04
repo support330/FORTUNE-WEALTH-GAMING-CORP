@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Online Gaming Platform" />
+  <meta name="keywords" content="Online Casino, online Poker, Holdem" />
+
+  <title>FORTUNE WEALTH GAMING CORP.</title>
+
+  <!-- Tailwind CSS (local build) -->
+  <link href="./SRC/CSS/output.css" rel="stylesheet">
+  <link href="./SRC/CSS/custom.css" rel="stylesheet">
+
+  <!--  Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./SRC/images/FWlogo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./SRC/images/FWlogo.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="./SRC/images/FWlogo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./SRC/images/FWlogo.png">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <!--  Theme color (mobile browsers) -->
+  <meta name="theme-color" content="#facc15">
+    <script src="SRC/JS/script.js"></script>
+</head>
+<body>
+  <div class="main_class">
+
+ <div class="jsx-top1 relative">
+            <nav class="fixed top-0 left-0 z-50 flex w-full items-center justify-between border-b border-black/10 bg-[#D0D9EE] px-4 py-4 text-black shadow-md transition-all duration-300 sm:px-8 md:px-16 lg:px-40">
+  <!-- Logo -->
+  <div class="flex items-center space-x-3">
+    <a class="group animate-fade-in-up relative z-50" href="index.html">
+      <img src="SRC/images/FWlogo.png" alt="FWGClogo" width="828" height="828" decoding="async" fetchpriority="high" srcset="SRC/images/FWlogo.png?w=64&q=75 1x, SRC/images/FWlogo.png?w=128&q=75 2x" class="h-16 w-16 cursor-pointer object-contain transition-transform duration-500 hover:scale-125 hover:rotate-3 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.7)]" />
+    </a>
+    <p class="text-lg font-semibold tracking-wide transition hover:text-yellow-600">Fortune Wealth Gaming Corp.</p>
+  </div>
+
+  <!-- Desktop Menu -->
+  <div class="ml-auto hidden items-center space-x-2 md:flex lg:space-x-4">
+    <a href="index.html" class="group relative flex items-center rounded-lg px-3 py-2 text-sm font-light transition-all duration-300 hover:text-yellow-600 lg:text-base">
+      Home
+      <svg class="ml-1 h-3 w-3 transition-transform duration-300 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+      <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-yellow-400 to-yellow-600 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+
+    <a href="our-products.html" class="group relative flex items-center rounded-lg px-3 py-2 text-sm font-light transition-all duration-300 hover:text-yellow-600 lg:text-base">
+      Our Products
+      <svg class="ml-1 h-3 w-3 transition-transform duration-300 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+      <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-yellow-400 to-yellow-600 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+
+    <a href="privacy.html" class="group relative flex items-center rounded-lg px-3 py-2 text-sm font-light transition-all duration-300 hover:text-yellow-600 lg:text-base">
+      Privacy
+      <svg class="ml-1 h-3 w-3 transition-transform duration-300 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+      <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-yellow-400 to-yellow-600 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+
+    <a href="news-&-updates.html" class="group relative flex items-center rounded-lg px-3 py-2 text-sm font-light transition-all duration-300 hover:text-yellow-600 lg:text-base">
+      News & Updates
+      <svg class="ml-1 h-3 w-3 transition-transform duration-300 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+      <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-yellow-400 to-yellow-600 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+
+    <a href="contact-us.html" class="relative ml-4 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-400 px-6 py-2 text-sm font-medium transition-all duration-300 hover:scale-105 hover:from-yellow-400 hover:to-yellow-300 hover:shadow-lg active:scale-95 lg:text-base">
+      <span class="relative z-10">Contact Us</span>
+    </a>
+  </div>
+
+  <!-- Mobile Hamburger -->
+  <button id="menu-btn" class="relative z-50 flex h-12 w-12 items-center justify-center rounded-lg transition-all duration-300 hover:bg-black/10 md:hidden">
+    <div class="relative flex h-6 w-4 flex-col justify-between">
+      <span class="bar h-0.5 w-full rounded bg-yellow-600 transition-all duration-300"></span>
+      <span class="bar h-0.5 w-full rounded bg-yellow-600 transition-all duration-300"></span>
+      <span class="bar h-0.5 w-full rounded bg-yellow-600 transition-all duration-300"></span>
+    </div>
+  </button>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="invisible fixed inset-0 z-40 flex scale-95 flex-col items-center justify-center gap-6 bg-[#D0D9EE] text-lg text-black opacity-0 transition-all duration-300">
+    <a href="index.html" class="transition hover:text-yellow-600">Home</a>
+    <a href="our-products.html" class="transition hover:text-yellow-600">Our Products</a>
+    <a href="privacy.html" class="transition hover:text-yellow-600">Privacy</a>
+    <a href="news-&-updates.html" class="transition hover:text-yellow-600">News & Updates</a>
+    <a href="contact-us.html" class="rounded-full bg-gradient-to-r from-yellow-500 to-yellow-400 px-6 py-3 text-black transition hover:from-yellow-400 hover:to-yellow-300">Contact Us</a>
+  </div>
+</nav>
+</div>
+       <!-- Contact Us Section -->
+<section class="relative overflow-hidden bg-gradient-to-b from-[#e8ebfa] via-[#f0f2fb] to-[#e4e7f5] px-6 py-20 text-gray-800 md:px-12 lg:px-20 xl:px-40">
+  <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 lg:grid-cols-2 py-20">
+    <!-- Left Side - Info -->
+    <div class="space-y-10">
+      <h2 class="relative inline-block font-bold tracking-tight drop-shadow-lg lg:text-4xl group">
+        Contact Us
+        <!-- underline -->
+        <span class="mt-2 block h-1 w-40 rounded-full bg-gradient-to-r from-yellow-400 via-white to-yellow-400 transition-all duration-500 group-hover:w-60"></span>
+      </h2>
+
+
+      <p class="text-lg text-gray-800">We would like to hear from you! Your inputs are important to us.</p>
+
+      <div class="space-y-8">
+        <!-- Phone -->
+        <div class="flex items-start space-x-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-10 w-10 flex-shrink-0 text-yellow-500">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.684l1.37 4.11a1 1 0 01-.27 1.05l-2.2 2.2a16.001 16.001 0 006.586 6.586l2.2-2.2a1 1 0 011.05-.27l4.11 1.37a1 1 0 01.684.95V19a2 2 0 01-2 2h-1C9.163 21 3 14.837 3 7V5z" />
+          </svg>
+          <div>
+            <h3 class="text-xl font-semibold text-black">Phone</h3>
+            <p class="text-gray-700">+63 998 986 0909</p>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="flex items-start space-x-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-10 w-10 flex-shrink-0 text-yellow-500">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <div>
+            <h3 class="text-xl font-semibold text-black">Email</h3>
+            <ul class="space-y-1 text-gray-700">
+              <li><a href="mailto:support@fgwcorp.com" class="hover:underline">support@fgwcorp.com</a></li>
+              <li><a href="mailto:investorrelations@fgwcorp.com" class="hover:underline">investorrelations@fgwcorp.com</a></li>
+              <li><a href="mailto:foundation@fgwcorp.com" class="hover:underline">foundation@fgwcorp.com</a></li>
+              <li><a href="mailto:careers@fgwcorp.com" class="hover:underline">careers@fgwcorp.com</a></li>
+              <li><a href="mailto:privacy@fgwcorp.com" class="hover:underline">privacy@fgwcorp.com</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="flex items-start space-x-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-10 w-10 flex-shrink-0 text-yellow-500">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5 9 6.343 9 8s1.343 3 3 3z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-7.582 8-14a8 8 0 10-16 0c0 6.418 8 14 8 14z" />
+          </svg>
+          <div>
+            <h3 class="text-xl font-semibold text-black">Address</h3>
+            <p class="leading-relaxed text-gray-700">
+              Unit 903 I-Land Bay Plaza, Diosdado Macapagal Avenue,<br />
+              MOA Complex, Pasay City
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Right Side - Form -->
+<div class="rounded-2xl border border-gray-300 bg-white/60 p-10 shadow-xl backdrop-blur-lg lg:p-12">
+  <h3 class="mb-6 leading-tight font-bold lg:text-4xl">Get in Touch</h3>
+
+  <form id="contactForm" action="https://formspree.io/f/mqadankz" method="POST" class="space-y-4">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <input type="text" name="first_name" placeholder="First Name" required
+        class="w-full rounded-md border border-gray-400 bg-white/80 p-3 text-black placeholder-gray-500 focus:ring-2 focus:ring-yellow-500" />
+      <input type="text" name="last_name" placeholder="Last Name" required
+        class="w-full rounded-md border border-gray-400 bg-white/80 p-3 text-black placeholder-gray-500 focus:ring-2 focus:ring-yellow-500" />
+    </div>
+
+    <input type="email" name="email" placeholder="Email Address" required
+      class="w-full rounded-md border border-gray-400 bg-white/80 p-3 text-black placeholder-gray-500 focus:ring-2 focus:ring-yellow-500" />
+
+    <input type="tel" name="contact_number" placeholder="Contact Number"
+      class="w-full rounded-md border border-gray-400 bg-white/80 p-3 text-black placeholder-gray-500 focus:ring-2 focus:ring-yellow-500" />
+
+    <textarea name="message" rows="4" placeholder="Message" required
+      class="w-full rounded-md border border-gray-400 bg-white/80 p-3 text-black placeholder-gray-500 focus:ring-2 focus:ring-yellow-500"></textarea>
+
+    <button type="submit"
+      class="rounded-md bg-yellow-600 px-6 py-2 font-semibold text-white transition hover:bg-yellow-500">Submit</button>
+  </form>
+</div>
+
+<!-- Toast container -->
+<div id="toastContainer" class="fixed bottom-5 right-5 space-y-3 z-50"></div>
+</section>
+
+
+
+<footer class="bg-[#D0D9EE] text-gray-800">
+  <!-- Divider -->
+  <div class="border-t border-gray-300 my-0"></div>
+
+  <div class="max-w-7xl mx-auto px-1 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- Column 1: Google Maps -->
+    <div class="hover:border hover:border-gray-400 hover:shadow-md rounded-xl p-6 bg-[#e6ebf7] transition">
+      <h2 class="text-black text-xl font-bold mb-4">Our Location</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.1275414086736!2d120.98608087457166!3d14.534696378687824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c992f7a931f9%3A0xd50f2e99010f97a8!2sI-Land%20Bay%20Plaza!5e0!3m2!1sen!2sph!4v1756114368342!5m2!1sen!2sph"
+        class="w-full h-50 rounded-lg border-0"
+        loading="lazy"
+        title="High Street South Corporate Plaza Tower 1">
+      </iframe>
+    </div>
+
+    <!-- Column 2: Contact Info -->
+    <div class="hover:border hover:border-gray-400 hover:shadow-md rounded-xl p-6 bg-[#e6ebf7] transition">
+      <h2 class="text-black text-xl font-bold mb-4">Send Feedback</h2>
+      <p class="mb-6">Your feedback matters to us.</p>
+      <ul class="space-y-3">
+        <li class="flex items-center gap-3">
+          <!-- Phone Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.26 3.78a1 1 0 01-.27 1.06L9.41 10.6a16 16 0 006 6l2.08-1.81a1 1 0 011.06-.27l3.78 1.26a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.27 21 3 14.73 3 7V5z" />
+          </svg>
+          <span class="hover:text-yellow-600">+63 998 986 0909</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <!-- Email Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v6a2 2 0 002 2z" />
+          </svg>
+          <span class="hover:text-yellow-600">support@fgwcorp.com</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Quick Links -->
+    <div class="hover:border hover:border-gray-400 hover:shadow-md rounded-xl p-6 bg-[#e6ebf7] transition">
+      <h2 class="text-black text-xl font-bold mb-4">Links</h2>
+      <ul class="space-y-3">
+        <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
+        <li><a href="our-products.html" class="hover:text-yellow-600">Our Products</a></li>
+        <li><a href="privacy.html" class="hover:text-yellow-600">Privacy</a></li>
+        <li><a href="news-&-updates.html" class="hover:text-yellow-600">News & Updates</a></li>
+        <li><a href="contact-us.html" class="hover:text-yellow-600">Contact Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Divider -->
+  <div class="border-t border-gray-300 my-6"></div>
+
+  <!-- Social Icons -->
+  <div class="flex justify-center gap-4 mb-4">
+    <a href="https://www.facebook.com/fortunewealth.gc" class="hover:text-yellow-600">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 5 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.987C18.343 21.128 22 17 22 12z"/>
+      </svg>
+    </a>
+    <a href="https://www.twitter.com" class="hover:text-yellow-600">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.43.36a9 9 0 01-2.83 1.1A4.52 4.52 0 0016.5 0c-2.53 0-4.5 2.17-4.5 4.72 0 .37.04.73.12 1.07C7.69 5.64 4.07 3.74 1.64.9a4.8 4.8 0 00-.61 2.38c0 1.64.8 3.09 2.02 3.94A4.41 4.41 0 01.96 7v.06c0 2.3 1.57 4.22 3.65 4.65-.38.11-.78.17-1.19.17-.29 0-.57-.03-.85-.08.58 1.9 2.23 3.29 4.19 3.33A9.06 9.06 0 010 19.54a12.8 12.8 0 006.92 2.07c8.3 0 12.84-7.24 12.84-13.52 0-.21 0-.42-.02-.63A9.48 9.48 0 0023 3z"/>
+      </svg>
+    </a>
+    <a href="https://www.instagram.com" class="hover:text-yellow-600">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M7.75 2C4.678 2 2 4.678 2 7.75v8.5C2 19.322 4.678 22 7.75 22h8.5c3.072 0 5.75-2.678 5.75-5.75v-8.5C22 4.678 19.322 2 16.25 2h-8.5zM12 7c1.379 0 2.5 1.121 2.5 2.5S13.379 12 12 12s-2.5-1.121-2.5-2.5S10.621 7 12 7zm0 9c-2.485 0-4.5-2.015-4.5-4.5S9.515 7 12 7s4.5 2.015 4.5 4.5S14.485 16 12 16zm6.75-9a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"/>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/" class="hover:text-yellow-600">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M19 0h-14C2.243 0 0 2.243 0 5v14c0 2.757 2.243 5 5 5h14c2.757 0 5-2.243 5-5V5c0-2.757-2.243-5-5-5zm-8 19H8v-9h3v9zm-1.5-10.268c-.966 0-1.75-.805-1.75-1.732s.784-1.732 1.75-1.732 1.75.805 1.75 1.732-.784 1.732-1.75 1.732zM20 19h-3v-4.5c0-1.073-.427-1.5-1.25-1.5s-1.25.427-1.25 1.5V19h-3v-9h3v1.5c.598-.898 1.441-1.5 2.5-1.5 1.897 0 3 1.365 3 3.5V19z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Copyright -->
+  <div class="flex justify-center text-gray-600 text-sm pb-6">
+    © 2025 Fortune Wealth Gaming Corp. All Rights Reserved.
+  </div>
+</footer>
+
+
+  </div>
+  
+<!-- JS for Hamburger -->
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const mobileLinks = document.querySelectorAll(".mobile-link");
+
+  let isOpen = false;
+
+  menuBtn.addEventListener("click", () => {
+    isOpen = !isOpen;
+
+    if (isOpen) {
+      mobileMenu.classList.remove("opacity-0", "invisible", "scale-95");
+      mobileMenu.classList.add("opacity-100", "visible", "scale-100");
+
+      // stagger animation for links
+      mobileLinks.forEach((link, i) => {
+        setTimeout(() => {
+          link.classList.remove("opacity-0", "translate-y-4");
+          link.classList.add("opacity-100", "translate-y-0", "transition-all", "duration-500");
+        }, i * 150); // stagger delay
+      });
+    } else {
+      mobileMenu.classList.remove("opacity-100", "visible", "scale-100");
+      mobileMenu.classList.add("opacity-0", "invisible", "scale-95");
+
+      // reset links immediately
+      mobileLinks.forEach(link => {
+        link.classList.add("opacity-0", "translate-y-4");
+        link.classList.remove("opacity-100", "translate-y-0");
+      });
+    }
+
+    // animate hamburger bars
+    const bars = menuBtn.querySelectorAll(".bar");
+    bars[0].classList.toggle("rotate-45", isOpen);
+    bars[0].classList.toggle("translate-y-2", isOpen);
+    bars[1].classList.toggle("opacity-0", isOpen);
+    bars[2].classList.toggle("-rotate-45", isOpen);
+    bars[2].classList.toggle("-translate-y-2", isOpen);
+  });
+
+  // Auto close menu when resizing to desktop
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768 && isOpen) {
+      isOpen = false;
+      mobileMenu.classList.remove("opacity-100", "visible", "scale-100");
+      mobileMenu.classList.add("opacity-0", "invisible", "scale-95");
+
+      // reset hamburger
+      const bars = menuBtn.querySelectorAll(".bar");
+      bars[0].classList.remove("rotate-45", "translate-y-2");
+      bars[1].classList.remove("opacity-0");
+      bars[2].classList.remove("-rotate-45", "-translate-y-2");
+
+      // reset links
+      mobileLinks.forEach(link => {
+        link.classList.add("opacity-0", "translate-y-4");
+        link.classList.remove("opacity-100", "translate-y-0");
+      });
+    }
+  });
+   // Click outside to close
+  document.addEventListener("click", (e) => {
+    if (isOpen && !mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  // Close menu when clicking a link
+  mobileLinks.forEach(link => {
+    link.addEventListener("click", () => closeMenu());
+  });
+</script>
+
+<style>
+  /* Reusable styles */
+  .nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #d1d5db;
+    font-weight: 300;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+  }
+  .nav-link:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .contact-btn {
+    margin-left: 1rem;
+    background: linear-gradient(to right, #0f0f0f, #facc15);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+  }
+  .contact-btn:hover {
+    background: linear-gradient(to right, #f1c206, #fde047);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(250, 200, 1, 0.3);
+  }
+</style>
+
+<!-- JS for Parallax Scroll Effect -->
+<script>
+  window.addEventListener("scroll", function () {
+    const nav = document.getElementById("magazineNav");
+    if (window.scrollY > 60) {
+      nav.classList.add("bg-[#0a0a0a]/95", "shadow-xl", "py-3");
+      nav.classList.remove("py-5");
+    } else {
+      nav.classList.remove("bg-[#0a0a0a]/95", "shadow-xl", "py-3");
+      nav.classList.add("py-5");
+    }
+  });
+</script>
+</div>
+</body>
+</html>
