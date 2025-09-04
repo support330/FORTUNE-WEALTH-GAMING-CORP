@@ -27,42 +27,71 @@
 
    <div class="jsx-top1 relative">
 <!-- NAVBAR -->
-<nav class="fixed top-0 left-0 z-50 flex w-full items-center justify-between border-b border-black/10 bg-white/90 backdrop-blur-md px-4 py-4 text-black shadow-md transition-all duration-300 sm:px-8 md:px-16 lg:px-40">
+                  <nav class="fixed top-0 left-0 z-50 flex w-full items-center justify-between border-b border-black/10 bg-[#D0D9EE] px-4 py-4 text-black shadow-md transition-all duration-300 sm:px-8 md:px-16 lg:px-40">
   <!-- Logo -->
   <div class="flex items-center space-x-3">
-    <a class="group relative z-50" href="index.html">
-      <img src="SRC/images/FWlogo.png" alt="FWGClogo"
-           class="h-16 w-16 cursor-pointer object-contain transition-transform duration-500 hover:scale-125 hover:rotate-3 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.7)]" />
+    <a class="group animate-fade-in-up relative z-50" href="index.html">
+      <img src="SRC/images/FWlogo.png" alt="FWGClogo" width="828" height="828" decoding="async" fetchpriority="high" srcset="SRC/images/FWlogo.png?w=64&q=75 1x, SRC/images/FWlogo.png?w=128&q=75 2x" class="h-16 w-16 cursor-pointer object-contain transition-transform duration-500 hover:scale-125 hover:rotate-3 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.7)]" />
     </a>
-    <p class="text-lg font-semibold tracking-wide transition hover:text-yellow-600">
-      Fortune Wealth Gaming Corp.
-    </p>
+    <p class="text-lg font-semibold tracking-wide transition hover:text-yellow-600">Fortune Wealth Gaming Corp.</p>
   </div>
 
   <!-- Desktop Menu -->
   <div class="ml-auto hidden items-center space-x-2 md:flex lg:space-x-4">
     <a href="index.html" class="group relative flex items-center rounded-lg px-3 py-2 text-sm font-light transition-all duration-300 hover:text-yellow-600 lg:text-base">
       Home
+      <svg class="ml-1 h-3 w-3 transition-transform duration-300 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
       <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-yellow-400 to-yellow-600 transition-all duration-300 group-hover:w-full"></span>
     </a>
+
     <a href="our-products.html" class="group relative flex items-center rounded-lg px-3 py-2 text-sm font-light transition-all duration-300 hover:text-yellow-600 lg:text-base">
       Our Products
+      <svg class="ml-1 h-3 w-3 transition-transform duration-300 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
       <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-yellow-400 to-yellow-600 transition-all duration-300 group-hover:w-full"></span>
     </a>
+
     <a href="privacy.html" class="group relative flex items-center rounded-lg px-3 py-2 text-sm font-light transition-all duration-300 hover:text-yellow-600 lg:text-base">
       Privacy
+      <svg class="ml-1 h-3 w-3 transition-transform duration-300 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
       <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-yellow-400 to-yellow-600 transition-all duration-300 group-hover:w-full"></span>
     </a>
+
     <a href="news-&-updates.html" class="group relative flex items-center rounded-lg px-3 py-2 text-sm font-light transition-all duration-300 hover:text-yellow-600 lg:text-base">
       News & Updates
+      <svg class="ml-1 h-3 w-3 transition-transform duration-300 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
       <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-yellow-400 to-yellow-600 transition-all duration-300 group-hover:w-full"></span>
     </a>
-    <a href="contact-us.html" class="relative ml-4 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-400 px-6 py-2 text-sm font-medium text-black transition-all duration-300 hover:scale-105 hover:from-yellow-400 hover:to-yellow-300 hover:shadow-lg active:scale-95 lg:text-base">
+
+    <a href="contact-us.html" class="relative ml-4 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-400 px-6 py-2 text-sm font-medium transition-all duration-300 hover:scale-105 hover:from-yellow-400 hover:to-yellow-300 hover:shadow-lg active:scale-95 lg:text-base">
       <span class="relative z-10">Contact Us</span>
     </a>
   </div>
 
-  
+  <!-- Mobile Hamburger -->
+  <button id="menu-btn" class="relative z-50 flex h-12 w-12 items-center justify-center rounded-lg transition-all duration-300 hover:bg-black/10 md:hidden">
+    <div class="relative flex h-6 w-4 flex-col justify-between">
+      <span class="bar h-0.5 w-full rounded bg-yellow-600 transition-all duration-300"></span>
+      <span class="bar h-0.5 w-full rounded bg-yellow-600 transition-all duration-300"></span>
+      <span class="bar h-0.5 w-full rounded bg-yellow-600 transition-all duration-300"></span>
+    </div>
+  </button>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="invisible fixed inset-0 z-40 flex scale-95 flex-col items-center justify-center gap-6 bg-[#D0D9EE] text-lg text-black opacity-0 transition-all duration-300">
+    <a href="index.html" class="transition hover:text-yellow-600">Home</a>
+    <a href="our-products.html" class="transition hover:text-yellow-600">Our Products</a>
+    <a href="privacy.html" class="transition hover:text-yellow-600">Privacy</a>
+    <a href="news-&-updates.html" class="transition hover:text-yellow-600">News & Updates</a>
+    <a href="contact-us.html" class="rounded-full bg-gradient-to-r from-yellow-500 to-yellow-400 px-6 py-3 text-black transition hover:from-yellow-400 hover:to-yellow-300">Contact Us</a>
+  </div>
 </nav>
 
 <!-- Padding so content isn’t hidden behind nav -->
