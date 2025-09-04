@@ -1,14 +1,45 @@
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Mobile Hamburger Menu Toggle
+<!-- JS for Hamburger -->
+<script>
   const menuBtn = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
+  const mobileLinks = document.querySelectorAll(".mobile-link");
 
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  }
+  let isOpen = false;
+
+  menuBtn.addEventListener("click", () => {
+    isOpen = !isOpen;
+
+    if (isOpen) {
+      mobileMenu.classList.remove("opacity-0", "invisible", "scale-95");
+      mobileMenu.classList.add("opacity-100", "visible", "scale-100");
+
+      // stagger animation for links
+      mobileLinks.forEach((link, i) => {
+        setTimeout(() => {
+          link.classList.remove("opacity-0", "translate-y-4");
+          link.classList.add("opacity-100", "translate-y-0", "transition-all", "duration-500");
+        }, i * 150); // stagger delay
+      });
+    } else {
+      mobileMenu.classList.remove("opacity-100", "visible", "scale-100");
+      mobileMenu.classList.add("opacity-0", "invisible", "scale-95");
+
+      // reset links immediately
+      mobileLinks.forEach(link => {
+        link.classList.add("opacity-0", "translate-y-4");
+        link.classList.remove("opacity-100", "translate-y-0");
+      });
+    }
+
+    // animate hamburger bars
+    const bars = menuBtn.querySelectorAll(".bar");
+    bars[0].classList.toggle("rotate-45", isOpen);
+    bars[0].classList.toggle("translate-y-2", isOpen);
+    bars[1].classList.toggle("opacity-0", isOpen);
+    bars[2].classList.toggle("-rotate-45", isOpen);
+    bars[2].classList.toggle("-translate-y-2", isOpen);
+  });
 
   // Slideshow
   let slideIndex = 0;
