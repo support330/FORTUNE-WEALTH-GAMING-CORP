@@ -1,44 +1,4 @@
 
- // for Hamburger
-  const menuBtn = document.getElementById("menu-btn");
-  const mobileMenu = document.getElementById("mobile-menu");
-  const mobileLinks = document.querySelectorAll(".mobile-link");
-
-  let isOpen = false;
-
-  menuBtn.addEventListener("click", () => {
-    isOpen = !isOpen;
-
-    if (isOpen) {
-      mobileMenu.classList.remove("opacity-0", "invisible", "scale-95");
-      mobileMenu.classList.add("opacity-100", "visible", "scale-100");
-
-      // stagger animation for links
-      mobileLinks.forEach((link, i) => {
-        setTimeout(() => {
-          link.classList.remove("opacity-0", "translate-y-4");
-          link.classList.add("opacity-100", "translate-y-0", "transition-all", "duration-500");
-        }, i * 150); // stagger delay
-      });
-    } else {
-      mobileMenu.classList.remove("opacity-100", "visible", "scale-100");
-      mobileMenu.classList.add("opacity-0", "invisible", "scale-95");
-
-      // reset links immediately
-      mobileLinks.forEach(link => {
-        link.classList.add("opacity-0", "translate-y-4");
-        link.classList.remove("opacity-100", "translate-y-0");
-      });
-    }
-
-    // animate hamburger bars
-    const bars = menuBtn.querySelectorAll(".bar");
-    bars[0].classList.toggle("rotate-45", isOpen);
-    bars[0].classList.toggle("translate-y-2", isOpen);
-    bars[1].classList.toggle("opacity-0", isOpen);
-    bars[2].classList.toggle("-rotate-45", isOpen);
-    bars[2].classList.toggle("-translate-y-2", isOpen);
-  });
 
   // Slideshow
   let slideIndex = 0;
@@ -57,10 +17,6 @@
 
     setTimeout(showSlides, 5000); // Change every 5 seconds
   }
-
-  showSlides();
-});
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
@@ -145,62 +101,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-    const menuBtn = document.getElementById("menu-btn");
-  const mobileMenu = document.getElementById("mobile-menu");
-  const mobileLinks = document.querySelectorAll(".mobile-link");
-  let isOpen = false;
-
-  function openMenu() {
-    isOpen = true;
-    mobileMenu.classList.remove("translate-x-full", "opacity-0", "invisible");
-    mobileMenu.classList.add("translate-x-0", "opacity-100", "visible");
-
-    // stagger animation for links
-    mobileLinks.forEach((link, i) => {
-      setTimeout(() => {
-        link.classList.remove("opacity-0", "translate-y-4");
-        link.classList.add("opacity-100", "translate-y-0");
-      }, i * 120);
-    });
-
-    // animate hamburger bars
-    const bars = menuBtn.querySelectorAll(".bar");
-    bars[0].classList.add("rotate-45", "translate-y-2");
-    bars[1].classList.add("opacity-0");
-    bars[2].classList.add("-rotate-45", "-translate-y-2");
-  }
-
-  function closeMenu() {
-    isOpen = false;
-    mobileMenu.classList.add("translate-x-full", "opacity-0", "invisible");
-    mobileMenu.classList.remove("translate-x-0", "opacity-100", "visible");
-
-    // reset links immediately
-    mobileLinks.forEach(link => {
-      link.classList.add("opacity-0", "translate-y-4");
-      link.classList.remove("opacity-100", "translate-y-0");
-    });
-
-    // reset hamburger
-    const bars = menuBtn.querySelectorAll(".bar");
-    bars[0].classList.remove("rotate-45", "translate-y-2");
-    bars[1].classList.remove("opacity-0");
-    bars[2].classList.remove("-rotate-45", "-translate-y-2");
-  }
-
-  menuBtn.addEventListener("click", () => {
-    isOpen ? closeMenu() : openMenu();
-  });
-
-  // Auto close menu on resize
-  window.addEventListener("resize", () => {
-    if (window.innerWidth >= 768 && isOpen) closeMenu();
-  });
-
-  // Click outside to close
-  document.addEventListener("click", (e) => {
-    if (isOpen && !mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
-      closeMenu();
-    }
-  });
 
