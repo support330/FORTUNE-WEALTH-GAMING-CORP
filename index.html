@@ -373,7 +373,42 @@
         </footer>
 
   </div>
-  
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  // Mobile Hamburger Menu Toggle
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  }
+
+  // Slideshow
+  let slideIndex = 0;
+  function showSlides() {
+    const slides = document.getElementsByClassName("slide");
+    if (slides.length === 0) return; // safety check
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) slideIndex = 1;
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 5000); // Change every 5 seconds
+  }
+
+  showSlides();
+});
+
+
+    
+  </script>
 <style>
   /* Reusable styles */
   .nav-link {
