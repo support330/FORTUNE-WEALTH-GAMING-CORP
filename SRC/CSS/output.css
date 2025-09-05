@@ -1280,6 +1280,11 @@ video {
   background-color: #ffbd00e6;
 }
 
+.bg-\[\#002b5f\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 43 95 / var(--tw-bg-opacity, 1));
+}
+
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
 }
