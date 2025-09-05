@@ -1,7 +1,4 @@
 
-
-
-
   // Slideshow
   let slideIndex = 0;
   function showSlides() {
@@ -20,10 +17,7 @@
     setTimeout(showSlides, 5000); // Change every 5 seconds
   }
 
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
   const submitButton = form.querySelector("button[type='submit']");
   const originalButtonText = submitButton.innerHTML;
@@ -46,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 5000);
   }
 
-  form.addEventListener("submit", async function (e) {
+    form.addEventListener("submit", async function (e) {
     e.preventDefault();
 
     // Show loading state
@@ -104,5 +98,3 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-
-
