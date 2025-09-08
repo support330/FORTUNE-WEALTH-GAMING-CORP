@@ -100,115 +100,93 @@
 </nav>
  </div>
 
- <section class="relative bg-gradient-to-b from-[#ffffff] via-[#f8f9fb] to-[#f1f2f6] text-gray-900 px-6 md:px-16 lg:px-28 py-24 overflow-hidden font-[Inter]">
+<section class="relative w-full font-[Inter] px-6 py-20 lg:py-32 bg-gradient-to-b from-[#ffffff] via-[#f8f9fb] to-[#f1f2f6]">
   
-  <!-- Section Title -->
-  <div class="max-w-7xl mx-auto py-10">
-    <div class="text-center mb-20">
+  <!-- Content Container -->
+  <div class="relative z-10 max-w-7xl mx-auto">
+    
+    <!-- Section Title + Overview -->
+    <div class="text-center mb-16">
       <h2 class="text-4xl md:text-5xl font-extrabold tracking-wide text-gray-900 uppercase">
         Our Products
       </h2>
       <div class="mt-4 mx-auto h-1 w-24 bg-[#1a2a6c] rounded-full"></div>
-      <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
-        Delivering world-class digital gaming solutions with innovation, security, and customer-first service.
+      <p class="mt-6 text-lg max-w-3xl mx-auto leading-relaxed text-gray-600">
+        To satisfy the ever-growing demand for high-quality entertainment by creating a venue 
+        that delivers engagement, excitement, and immersive experiences in a safe and secure environment.
       </p>
     </div>
 
-    <!-- Product 1 -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
-      <!-- Image -->
-      <div class="flex justify-center">
-        <img src="SRC/images/prodlogo.png" alt="Our Products" 
-             class="max-w-sm w-full rounded-xl shadow-md border border-gray-200 
-                    hover:border-gray-400 hover:scale-105 hover:shadow-xl 
-                    transition duration-500 transform">
-      </div>
-      <!-- Text -->
-      <div class="p-10 rounded-xl bg-white shadow-md border border-gray-200 
-                  hover:border-gray-400 hover:scale-105 hover:shadow-xl 
-                  transition duration-500 transform">
-        <h3 class="text-2xl font-semibold tracking-wide mb-6">OVERVIEW</h3>
-        <p class="text-gray-700 leading-relaxed">
-          To satisfy the ever-growing demand for high-quality entertainment by creating a venue that delivers engagement, 
-          excitement, and immersive experiences in a safe and secure environment.
-        </p>
-      </div>
-    </div>
-
-    <!-- Product 2 -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
-      <!-- Text -->
-      <div class="order-2 lg:order-1 p-10 rounded-xl bg-white shadow-md border border-gray-200 
-                  hover:border-gray-400 hover:scale-105 hover:shadow-xl 
-                  transition duration-500 transform">
-        <h3 class="text-2xl font-semibold tracking-wide mb-6">REVOLUTIONHOLD'EM</h3>
-        <p class="text-gray-700 leading-relaxed">
-          Revolution is a web-based online gaming provider operating Texas Hold’em poker games, hosting 3,000+ daily active users 
-          and up to 500 simultaneous players. The platform delivers a competitive poker environment and is expanding to include 
-          Baccarat, Omaha, Nine-Nine, and Slots.
-        </p>
-        <div class="mt-6 flex justify-end">
-          <a href="https://revolutionholdem.ph/"
-             class="inline-block bg-[#1a2a6c] text-white font-semibold px-6 py-2 rounded-lg hover:bg-[#004e92] transition shadow-md hover:shadow-lg">
-            Explore Now
-          </a>
+    <!-- Product Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      
+      <!-- Revolution Hold'em -->
+      <div class="flex flex-col bg-white rounded-xl shadow-md border border-gray-200 
+                  hover:border-gray-400 hover:shadow-xl transition duration-500 transform">
+        <div class="flex justify-center p-6">
+          <img src="SRC/images/revolutionlogo.png" alt="REVOLUTIONHOLD'EM" 
+               class="max-h-32 w-auto object-contain">
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-semibold tracking-wide mb-4">REVOLUTION HOLD'EM</h3>
+          <p class="text-gray-700 leading-relaxed flex-grow">
+            A web-based online poker platform hosting 3,000+ daily active users with future expansion into Baccarat, Omaha, and Slots.
+          </p>
+          <div class="mt-6 flex justify-end">
+            <a href="revolutionholdem.html"
+               class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gradient-to-r from-[#1a2a6c] to-[#004e92] text-white 
+                      hover:scale-105 hover:shadow-lg transition font-medium">
+               Explore Now →
+            </a>
+          </div>
         </div>
       </div>
-      <!-- Image -->
-      <div class="flex justify-center order-1 lg:order-2">
-        <img src="SRC/images/revolutionlogo.png" alt="REVOLUTIONHOLD'EM"
-             class="max-w-sm w-full rounded-xl shadow-md border border-gray-200 
-                    hover:border-gray-400 hover:scale-105 hover:shadow-xl 
-                    transition duration-500 transform">
-      </div>
-    </div>
 
-    <!-- Product 3 -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
-      <!-- Image -->
-      <div class="flex justify-center">
-        <img src="SRC/images/JackpotRooster_Logo.png" alt="JACKPOT ROOSTER"
-             class="max-w-sm w-full rounded-xl shadow-md border border-gray-200 
-                    hover:border-gray-400 hover:scale-105 hover:shadow-xl 
-                    transition duration-500 transform">
-      </div>
-      <!-- Text -->
-      <div class="p-10 rounded-xl bg-white shadow-md border border-gray-200 
-                  hover:border-gray-400 hover:scale-105 hover:shadow-xl 
-                  transition duration-500 transform">
-        <h3 class="text-2xl font-semibold tracking-wide mb-6">JACKPOT ROOSTER</h3>
-        <p class="text-gray-700 leading-relaxed">
-          Jackpot Rooster is an online gaming platform providing secure access to casino games in the Philippines. 
-          Partnered with top providers like Evolution, Pragmatic Play, Jili, Evoplay, and Dreamtech Gaming — ensuring a 
-          premium and seamless casino experience.
-        </p>
-        <div class="mt-6 flex justify-end">
-          <a href="https://jackpotrooster.io/"
-             class="inline-block bg-[#1a2a6c] text-white font-semibold px-6 py-2 rounded-lg hover:bg-[#004e92] transition shadow-md hover:shadow-lg">
-            Explore Now
-          </a>
+      <!-- Jackpot Rooster -->
+      <div class="flex flex-col bg-white rounded-xl shadow-md border border-gray-200 
+                  hover:border-gray-400 hover:shadow-xl transition duration-500 transform">
+        <div class="flex justify-center p-6">
+          <img src="SRC/images/JackpotRooster_Logo.png" alt="JACKPOT ROOSTER" 
+               class="max-h-32 w-auto object-contain">
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-semibold tracking-wide mb-4">JACKPOT ROOSTER</h3>
+          <p class="text-gray-700 leading-relaxed flex-grow">
+            Coming Soon!
+          </p>
+          <div class="mt-6 flex justify-end">
+            <a href="#"
+               class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gradient-to-r from-[#1a2a6c] to-[#004e92] text-white 
+                      hover:scale-105 hover:shadow-lg transition font-medium">
+               Explore Now →
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Product 4 -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-      <!-- Text -->
-      <div class="order-2 lg:order-1 p-10 rounded-xl bg-white shadow-md border border-gray-200 
-                  hover:border-gray-400 hover:scale-105 hover:shadow-xl 
-                  transition duration-500 transform">
-        <h3 class="text-2xl font-semibold tracking-wide mb-6">SPECIALTY GAMES</h3>
-        <p class="text-gray-700 leading-relaxed">Coming Soon.</p>
+      <!-- Specialty Games -->
+      <div class="flex flex-col bg-white rounded-xl shadow-md border border-gray-200 
+                  hover:border-gray-400 hover:shadow-xl transition duration-500 transform">
+        <div class="flex justify-center p-6">
+          <img src="SRC/images/spgames.png" alt="SPECIALTY GAMES" 
+               class="max-h-32 w-auto object-contain">
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-semibold tracking-wide mb-4">SPECIALTY GAMES</h3>
+          <p class="text-gray-700 leading-relaxed flex-grow">
+            Coming Soon!
+          </p>
+          <div class="mt-6 flex justify-end">
+            <a href="#"
+               class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gradient-to-r from-[#1a2a6c] to-[#004e92] text-white 
+                      hover:scale-105 hover:shadow-lg transition font-medium">
+               Learn More →
+            </a>
+          </div>
+        </div>
       </div>
-      <!-- Image -->
-      <div class="flex justify-center order-1 lg:order-2">
-        <img src="SRC/images/spgames.png" alt="SPECIALTY GAMES"
-             class="max-w-sm w-full rounded-xl shadow-md border border-gray-200 
-                    hover:border-gray-400 hover:scale-105 hover:shadow-xl 
-                    transition duration-500 transform">
-      </div>
-    </div>
 
+    </div>
   </div>
 </section>
 
@@ -299,7 +277,6 @@
 </div>
  </footer> 
 
-   
 </div>
   
 <!-- JS for Hamburger -->
