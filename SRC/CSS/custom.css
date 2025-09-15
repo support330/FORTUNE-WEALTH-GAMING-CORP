@@ -83,3 +83,64 @@
   .group:hover .underline-hover {
     animation: shimmer 3s linear infinite, underlineGlow 2.5s ease-in-out infinite;
   }
+  /* Reusable styles */
+  .nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #d1d5db;
+    font-weight: 300;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+  }
+  .nav-link:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .contact-btn {
+    margin-left: 1rem;
+    background: linear-gradient(to right, #0f0f0f, #facc15);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+  }
+  .contact-btn:hover {
+    background: linear-gradient(to right, #f1c206, #fde047);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(250, 200, 1, 0.3);
+  }
+  /*  -------------*/
+    .perspective {
+    perspective: 1500px;
+  }
+  .slide {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    transform-style: preserve-3d;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .slide.active {
+    opacity: 1;
+    transform: rotateY(0deg);
+    z-index: 10;
+    pointer-events: auto;
+  }
+  .slide.prev {
+    transform: rotateY(-180deg);
+    opacity: 0;
+    z-index: 5;
+  }
+  .slide.next {
+    transform: rotateY(180deg);
+    opacity: 0;
+    z-index: 5;
+  }
+  .dot.active {
+    background-color: #facc15; /* yellow-400 */
+    opacity: 1;
+  }

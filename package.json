@@ -5,14 +5,17 @@
   "scripts": {
     "dev": "npx tailwindcss -i ./SRC/CSS/input.css -o ./SRC/CSS/output.css --watch",
     "build": "npx tailwindcss -i ./SRC/CSS/input.css -o ./SRC/CSS/output.css --minify",
-     "build:css": "npx tailwindcss -i ./SRC/CSS/input.css -o ./SRC/CSS/output.css --minify"
+    "build:css": "npx tailwindcss -i ./SRC/CSS/input.css -o ./SRC/CSS/output.css --minify",
+    "minify": "terser ./SRC/JS/script.js --compress --mangle --output ./SRC/JS/script.min.js"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "terser": "^5.44.0",
+    "uglify-js": "^3.19.3"
   },
-  "description": "",
+  "description": "FORTUNE WEALTH GAMING CORP.",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -114,5 +117,13 @@
     "wrap-ansi": "^8.1.0",
     "wrap-ansi-cjs": "^7.0.0",
     "yaml": "^2.8.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/support330/FORTUNE-WEALTH-GAMING-CORP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/support330/FORTUNE-WEALTH-GAMING-CORP/issues"
+  },
+  "homepage": "https://github.com/support330/FORTUNE-WEALTH-GAMING-CORP#readme"
 }
