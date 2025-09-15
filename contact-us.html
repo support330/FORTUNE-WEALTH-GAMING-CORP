@@ -155,25 +155,40 @@
       <h3 class="mb-6 text-3xl font-extrabold text-gray-900 uppercase">Get in Touch</h3>
 
       <form id="contactForm" action="https://formspree.io/f/mqadankz" method="POST" class="space-y-4">
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <input type="text" name="first_name" placeholder="First Name" required
-            class="w-full rounded-md border border-gray-300 p-3 placeholder-gray-500 text-gray-900 font-[Inter] focus:ring-2 focus:ring-blue-600" />
-          <input type="text" name="last_name" placeholder="Last Name" required
-            class="w-full rounded-md border border-gray-300 p-3 placeholder-gray-500 text-gray-900 font-[Inter] focus:ring-2 focus:ring-blue-600" />
-        </div>
+  <!-- First + Last Name -->
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+    <input type="text" name="first_name" placeholder="First Name" required minlength="2" maxlength="50"
+      class="w-full rounded-md border border-gray-300 p-3 placeholder-gray-500 text-gray-900 font-[Inter] focus:ring-2 focus:ring-blue-600" />
 
-        <input type="email" name="email" placeholder="Email Address" required
-          class="w-full rounded-md border border-gray-300 p-3 placeholder-gray-500 text-gray-900 font-[Inter] focus:ring-2 focus:ring-blue-600" />
+    <input type="text" name="last_name" placeholder="Last Name" required minlength="2" maxlength="50"
+      class="w-full rounded-md border border-gray-300 p-3 placeholder-gray-500 text-gray-900 font-[Inter] focus:ring-2 focus:ring-blue-600" />
+  </div>
 
-        <input type="tel" name="contact_number" placeholder="Contact Number"
-          class="w-full rounded-md border border-gray-300 p-3 placeholder-gray-500 text-gray-900 font-[Inter] focus:ring-2 focus:ring-blue-600" />
+  <!-- Email -->
+  <input type="email" name="email" placeholder="Email Address" required
+    class="w-full rounded-md border border-gray-300 p-3 placeholder-gray-500 text-gray-900 font-[Inter] focus:ring-2 focus:ring-blue-600" />
 
-        <textarea name="message" rows="4" placeholder="Message" required
-          class="w-full rounded-md border border-gray-300 p-3 placeholder-gray-500 text-gray-900 font-[Inter] focus:ring-2 focus:ring-blue-600"></textarea>
+  <!-- Contact Number -->
+  <input type="tel" name="contact_number" placeholder="Contact Number" pattern="[0-9+\-\s]{7,15}"
+    class="w-full rounded-md border border-gray-300 p-3 placeholder-gray-500 text-gray-900 font-[Inter] focus:ring-2 focus:ring-blue-600" />
 
-        <button type="submit"
-          class="w-full rounded-md bg-[#002b5f] px-6 py-3 text-white font-bold uppercase">Submit</button>
-      </form>
+  <!-- Message -->
+  <textarea name="message" rows="4" placeholder="Message" required minlength="10" maxlength="1000"
+    class="w-full rounded-md border border-gray-300 p-3 placeholder-gray-500 text-gray-900 font-[Inter] focus:ring-2 focus:ring-blue-600"></textarea>
+
+  <!-- Honeypot (hidden anti-spam field) -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <!-- Success Redirect (optional) -->
+  <input type="hidden" name="_redirect" value="thankyou.html">
+
+  <!-- Submit Button -->
+  <button type="submit"
+    class="w-full rounded-md bg-[#002b5f] px-6 py-3 text-white font-bold uppercase hover:bg-[#004080] transition">
+    Submit
+  </button>
+</form>
+
     </div>
 
     <!-- Toast container -->
