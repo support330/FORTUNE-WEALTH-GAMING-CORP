@@ -100,123 +100,95 @@
 </nav>
 </div>
 
-<section class="relative overflow-hidden bg-gradient-to-b from-[#ffffff] via-[#f8f9fb] to-[#f1f2f6] px-6 pt-52 py-24 font-[Inter] text-gray-900 md:px-16 lg:px-28">
-  <div class="mx-auto max-w-7xl">
+<section class="relative bg-gradient-to-b from-white via-[#fafbfc] to-[#f1f3f6] px-6 pt-52 pb-20 font-[Inter] text-gray-900 md:px-16 lg:px-28">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
 
-    <!-- Title -->
-    <div class="mb-10 text-center">
-      <h2 class="text-4xl font-extrabold tracking-wide text-gray-900 uppercase md:text-5xl">
-        News & Updates
-      </h2>
-      <p class="mx-auto mt-4 max-w-3xl text-lg text-gray-600">
-        Stay updated with our latest announcements, events, and insights.
-      </p>
-    </div>
-
-    <!-- Search Bar -->
-    <div class="mb-12 flex justify-center">
-      <input type="text" id="newsSearch" placeholder="Search news..." 
-             class="w-full max-w-md rounded-full border border-gray-300 px-5 py-3 shadow-sm focus:border-yellow-400 focus:ring focus:ring-yellow-400 outline-none transition" />
-    </div>
-
-    <!-- News Grid -->
-    <div id="newsGrid" class="grid grid-cols-1 gap-10 md:grid-cols-3">
+    <!-- Main Content -->
+    <article class="lg:col-span-2 space-y-10">
       
-      <!-- Card 1 -->
-      <div class="group relative flex flex-col h-full overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-lg transition duration-500 hover:scale-105 hover:shadow-2xl hover:border-gray-400">
-        <div class="relative overflow-hidden">
-          <div class="aspect-[3/2] w-full overflow-hidden">
-            <img src="SRC/images/revlogo.png" 
-                 alt="Update Image" 
-                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent opacity-0 group-hover:opacity-25 transition duration-500"></div>
-        </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <div class="flex-grow">
-            <p class="mb-2 text-sm text-gray-500">July 25, 2025</p>
-            <h3 class="mb-3 text-2xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-[#1a2a6c]">Exciting Update Released</h3>
-                    <p class="mb-4 text-sm leading-relaxed text-gray-700">
-                      We are thrilled to announce the release of our new content, enhancing the overall user experience on our platform.
-                    </p>
-          </div>
-          <div class="mt-4 flex justify-start">
-            <a href="newspaper.html"
-               class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-[#1a2a6c] to-[#004e92] text-white 
-                      text-sm font-medium tracking-wide
-                      transition duration-300
-                      hover:from-yellow-500 hover:to-yellow-600 hover:scale-105 hover:shadow-lg">
-              Read More →
-            </a>
-          </div>
-        </div>
+      <!-- Title -->
+      <header>
+        <h1 class="text-5xl font-extrabold text-[#0f2d57] font-[Merriweather] leading-snug">
+          Fortune Wealth Gaming Corp. Officially Launches
+        </h1>
+        <p class="text-sm text-gray-500 mt-3 italic border-b border-gray-200 pb-3">
+          By FWGC | Jul 25, 2025
+        </p>
+      </header>
+
+      <!-- Image -->
+      <figure class="mt-6">
+        <img src="SRC/images/FLbg.jpg" alt="Corporate News" class="w-full rounded-md shadow border border-gray-300" />
+        <figcaption class="text-xs text-gray-500 mt-2 text-center italic">
+          Fortune Wealth Gaming Corp. marks its official launch as a PAGCOR-licensed online gaming company.
+        </figcaption>
+      </figure>
+
+      <!-- Body -->
+      <div class="space-y-6 leading-relaxed text-justify">
+        <p>
+          <strong>Pasay City, Philippines – September 25, 2024</strong> – Fortune Wealth Gaming Corp. (FWGC) has officially launched as a 
+          <strong>PAGCOR-licensed online gaming company</strong>, dedicated to delivering secure, fair, and world-class digital gaming experiences. 
+          The company is committed to innovation, integrity, and excellence as it enters the growing global market.
+        </p>
+        
+        <blockquote class="border-l-4 border-[#0f2d57] pl-4 italic text-gray-700 text-lg font-medium">
+          “With our launch, Fortune Wealth Gaming Corp. reaffirms its mission to shape the future of online gaming by offering trusted, seamless, and engaging platforms for players and partners worldwide.”
+        </blockquote>
+
+        <p>
+          Strategically headquartered at I-Land Bay Plaza, Diosdado Macapagal Avenue, MOA Complex, Pasay City, FWGC will focus on growth through advanced 
+          technology, strategic partnerships, and a dedication to responsible gaming practices. The company’s goal is to redefine the digital gaming industry 
+          with transparency, compliance, and customer-first solutions.
+        </p>
+
+        <h2 class="text-2xl font-bold text-[#0f2d57] border-b border-gray-200 pb-2">
+          Launch Highlights
+        </h2>
+        <ul class="list-disc pl-6 space-y-2 text-gray-700">
+          <li><strong>Officially PAGCOR-licensed</strong> – ensuring strict regulatory compliance and fair gaming.</li>
+          <li><strong>Secure and innovative platforms</strong> – designed to deliver seamless digital gaming experiences.</li>
+          <li><strong>Customer-first approach</strong> – with 24/7 support and a focus on responsible gaming.</li>
+          <li><strong>Vision for growth</strong> – driven by technology, partnerships, and continuous innovation.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-[#0f2d57] border-b border-gray-200 pb-2">
+          A Future Beyond Limits
+        </h2>
+        <p>
+          The launch of FWGC is only the beginning. The company is determined to set new standards in digital gaming by offering a safe, enjoyable, 
+          and rewarding environment for players while forging partnerships that will expand its global presence.
+        </p>
+        <p>
+          <strong>“Play Beyond Limits. Win Your Fortune. Build Your Wealth with Fortune Wealth Gaming Corp.”</strong>
+        </p>
+      </div>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="space-y-8">
+
+      <!-- Highlight -->
+      <div class="bg-[#0f2d57] text-white p-6 rounded-lg shadow-md">
+        <h3 class="text-lg font-bold mb-2">Key Highlight</h3>
+        <p class="text-sm leading-relaxed">
+          <strong>“Fortune Wealth Gaming Corp. officially launches as a PAGCOR-licensed online gaming company committed to innovation, fairness, and excellence.”</strong>  
+        </p>
       </div>
 
-      <!-- Card 2 -->
-      <div class="group relative flex flex-col h-full overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-lg transition duration-500 hover:scale-105 hover:shadow-2xl hover:border-gray-400">
-        <div class="relative overflow-hidden">
-          <div class="aspect-[3/2] w-full overflow-hidden">
-            <img src="SRC/images/FLbg.jpg" 
-                 alt="Event Image" 
-                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent opacity-0 group-hover:opacity-25 transition duration-500"></div>
-        </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <div class="flex-grow">
-            <p class="mb-2 text-sm text-gray-500">July 25, 2025</p>
-            <h3 class="mb-3 text-2xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-[#1a2a6c]">Fortune Wealth Gaming Corp. Officially Launches</h3>
-            <p class="mb-4 text-sm leading-relaxed text-gray-700">
-              Fortune Wealth Gaming Corp. officially launches as a PAGCOR-licensed company, committed to secure, fair, and world-class digital gaming experiences.
-            </p>
-          </div>
-          <div class="mt-4 flex justify-start">
-            <a href="fortuneL.html"
-               class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-[#1a2a6c] to-[#004e92] text-white 
-                      text-sm font-medium tracking-wide
-                      transition duration-300
-                      hover:from-yellow-500 hover:to-yellow-600 hover:scale-105 hover:shadow-lg">
-              Read More →
-            </a>
-          </div>
-        </div>
+      <!-- Contact Info -->
+      <div class="bg-white shadow-md rounded-lg p-6 border border-gray-200">
+        <h3 class="text-lg font-bold text-[#0f2d57] mb-3">Inquiries</h3>
+        <p class="text-sm text-gray-700">
+          For partnership inquiries, please contact us at  
+          <a href="mailto:support@fwgcorp.com" class="text-[#0f2d57] underline">support@fwgcorp.com</a>  
+          or call <strong>0998-986-0909</strong>.
+        </p>
       </div>
+    </aside>
 
-      <!-- Card 3 -->
-      <div class="group relative flex flex-col h-full overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-lg transition duration-500 hover:scale-105 hover:shadow-2xl hover:border-gray-400">
-        <div class="relative overflow-hidden">
-          <div class="aspect-[3/2] w-full overflow-hidden">
-            <img src="SRC/images/partnerlogo.jpg" 
-                 alt="Partnership Image" 
-                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent opacity-0 group-hover:opacity-25 transition duration-500"></div>
-        </div>
-        <div class="p-6 flex flex-col flex-grow">
-          <div class="flex-grow">
-            <p class="mb-2 text-sm text-gray-500">July 25, 2025</p>
-            <h3 class="mb-3 text-2xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-[#1a2a6c]">Partnership Announcement</h3>
-                 <p class="mb-4 text-sm leading-relaxed text-gray-700">
-                    We are proud to announce that we are <strong>seeking partnerships</strong> for our content, <strong>Revolution Hold’em</strong>. 
-                    Interested platform partners and integrators are invited to collaborate with Fortune Wealth Gaming Corp. to bring Revolution to a broader audience.
-                  </p>
-          </div>
-          <div class="mt-4 flex justify-start">
-            <a href="partnership.html"
-               class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-[#1a2a6c] to-[#004e92] text-white 
-                      text-sm font-medium tracking-wide
-                      transition duration-300
-                      hover:from-yellow-500 hover:to-yellow-600 hover:scale-105 hover:shadow-lg">
-              Read More →
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
   </div>
 </section>
-
 
 <footer class="bg-[#ffffff] text-gray-800">
   <!-- Footer -->
@@ -427,43 +399,7 @@
     }
   });
 </script>
-<script>
-const searchInput = document.getElementById('newsSearch');
-const newsCards = document.querySelectorAll('#newsGrid > div');
 
-function highlightText(element, query) {
-  const regex = new RegExp(`(${query})`, 'gi');
-  element.innerHTML = element.textContent.replace(regex, '<mark class="bg-yellow-200 text-yellow-800">$1</mark>');
-}
-
-searchInput.addEventListener('input', () => {
-  const query = searchInput.value.toLowerCase();
-
-  newsCards.forEach(card => {
-    const titleEl = card.querySelector('h3');
-    const descEl = card.querySelector('p:nth-of-type(2)');
-
-    const titleText = titleEl.textContent.toLowerCase();
-    const descText = descEl.textContent.toLowerCase();
-
-    if (query === '' || titleText.includes(query) || descText.includes(query)) {
-      card.style.display = 'block';
-
-      // Reset previous highlights
-      titleEl.innerHTML = titleEl.textContent;
-      descEl.innerHTML = descEl.textContent;
-
-      if(query) {
-        highlightText(titleEl, query);
-        highlightText(descEl, query);
-      }
-
-    } else {
-      card.style.display = 'none';
-    }
-  });
-});
-</script>
 
 </div>
 </body>
